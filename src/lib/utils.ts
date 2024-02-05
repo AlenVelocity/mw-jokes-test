@@ -6,6 +6,6 @@ export type Joke = {
     punchLine: string
 }
 export const getJoke = async (): Promise<Joke> => {
-  const response = await fetch(url)
-  return await response.json() as Joke
+    const response = await fetch(url)
+    return (await response.json()) as Joke
 }
