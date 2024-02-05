@@ -29,7 +29,7 @@ export const Jokes = () => {
                     </Button>
                 </div>
                 <div className="flex items-center space-x-4 p-4">
-                    <Link href={'/d'}>
+                    <Link href={'https://mwks-joke-service.azurewebsites.net/swagger/index.html'}>
                         <p>View API Docs</p>
                     </Link>
                 </div>
