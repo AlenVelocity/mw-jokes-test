@@ -13,8 +13,8 @@ export const Jokes = () => {
         setCurrentJoke(undefined)
         setShowPunchline(false)
         const joke = await getJoke().catch(() => setError('Failed to fetch joke'))
-        joke && setCurrentJoke(joke)
-        setError(undefined)
+        joke && [setCurrentJoke(joke), setError(undefined)]
+
     }
 
     useEffect(() => {
