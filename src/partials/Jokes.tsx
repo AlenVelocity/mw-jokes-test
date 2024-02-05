@@ -14,6 +14,7 @@ export const Jokes = () => {
         setShowPunchline(false)
         const joke = await getJoke().catch(() => setError('Failed to fetch joke'))
         joke && setCurrentJoke(joke)
+        setError(undefined)
     }
 
     useEffect(() => {
